@@ -22,6 +22,12 @@ class V1::ContactsController < ApplicationController
     end
   end
 
+  def show
+    @contact = Contact.where(id: params[:id]).first
+
+    render json: @contact, status: :ok
+  end
+
   def contact_params
     params.require(:contact).permit(:first_name, :last_name, :email)
   end
