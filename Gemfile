@@ -9,6 +9,7 @@ gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'rack-cors', '~> 0.4.0'
 gem 'devise', '~> 4.2'
+gem 'simple_token_authentication', '~> 1.15', '>= 1.15.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
